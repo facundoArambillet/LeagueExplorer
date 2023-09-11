@@ -1,0 +1,32 @@
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.champion-text {
+    margin-left: 2%;
+}
+.champion-content-container {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 40px;
+}
+.champion-card-section {
+    padding: 14px;
+    padding-left: 2%;
+    border-radius: 3px;
+    background-color: #191937;
+    margin-bottom: 2%;
+}
+.champion-content-header {
+    padding-left: 10px;
+}
+.champion-content-title {
+    padding-left: 5%;
+}
+.champion-content-header-image img {
+    border: 2px solid #2c2c40;
+}
+.champion-content-title div a {
+    margin-right: 15px;
+}

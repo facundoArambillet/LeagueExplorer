@@ -1,0 +1,44 @@
+img {
+    border: 2px solid #2c2c40;;
+    border-radius: 6px;
+}
+.champion-name {
+    margin-top: 8px;
+    font-size: 12px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+/* .div-image:after {
+    content: "";
+    position: absolute;
+    top: -110%;
+    left: -180%;
+    width: 220%;
+    height: 220%;
+    opacity: 0;
+    transform: rotate(45deg);
+    background: hsla(0,0%,100%,.13);
+    background: linear-gradient(90deg,hsla(0,0%,100%,.13) 0,hsla(0,0%,100%,.13) 77%,hsla(0,0%,100%,.5) 92%,hsla(0,0%,100%,0));
+} */
+.image  :hover {
+    border: 2px solid red;
+}
+.div-image:hover .champion-name {
+    font-weight: bold; /* Cambia el color del texto cuando se pasa el mouse por encima */
+}
+
+
+/* .div-image :after {
+    content: "";
+    position: absolute;
+    top: -110%;
+    left: -180%;
+    width: 220%;
+    height: 220%;
+    opacity: 0;
+    transform: rotate(45deg);
+    background: hsla(0,0%,100%,.13);
+    background: linear-gradient(90deg,hsla(0,0%,100%,.13) 0,hsla(0,0%,100%,.13) 77%,hsla(0,0%,100%,.5) 92%,hsla(0,0%,100%,0))
+} */

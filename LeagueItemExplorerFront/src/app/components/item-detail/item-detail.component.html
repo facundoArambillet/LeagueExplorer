@@ -1,0 +1,127 @@
+<div *ngIf="dataLoaded" class="container item-content">
+    <div class="item-content-container">
+
+        <div class="item-content-header d-flex">
+            <div class="d-flex item-content-header-image justify-content-center align-items-center">
+                <img class="item-image" src={{itemImage}} alt="" width="90px" height="90px">
+            </div>
+            <div class="item-content-header-title">
+                <h2>{{itemDetail.name}}</h2>
+                <h5>
+                    {{itemDetail.name}} is a <strong>{{itemDetail.tags[0]}} item</strong> in League of Legends.
+                    {{itemDetail.name}} costs <strong>{{itemDetail.gold.total}} gold</strong>
+                    {{itemDescription ? "and grants " + itemDescription + "." : "."}}
+                </h5>
+            </div>
+        </div>
+
+        <div class="item-content-body">
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col-8">
+                        <div class="item-detail-section">
+                            <div class="item-content-figure">
+                                <p><strong>Recipe</strong></p>
+                            </div>
+                            <div class="d-flex item-detail-recipe-body">
+                                <div class="item-detail-recipe-body-image">
+                                    <img class="item-image" src={{itemImage}} alt="" width="45px" height="45px">
+                                </div>
+                                <div class="item-detail-recipe-body-content">
+                                    <div>
+                                        <strong>{{itemDetail.name}}</strong>
+                                    </div>
+                                    <div class="item-detail-content-gold">
+                                        <img src="https://static.bigbrain.gg/assets/ugg/icons/gold-icon.svg"
+                                            alt="gold-icon">
+                                        {{itemDetail.gold.total}}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item-detail-section item-content-figure">
+                            <div class="item-detail-description-passive item-content-figure">
+                                <strong>
+                                    <p>Passive</p>
+                                </strong>
+                                <div class="item-detail-description-passive-body">
+                                    {{itemPassive}}
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mt-2">
+                        <div class="item-detail-section">
+                            <div class="item-detail-description-header item-content-figure pb-2">
+                                <strong>
+                                    <p>{{itemDetail.name}}</p>
+                                </strong>
+
+                                <img class="item-image" src={{itemImage}} alt="" width="64px" height="64px">
+                            </div>
+                            <div class="item-detail-description-stats item-details-description-all item-content-figure"
+                                *ngIf="itemStats.length > 0">
+                                <strong>
+                                    <p>Stats</p>
+                                </strong>
+                                <div class="item-detail-description-stats-body" *ngFor="let stat of itemStats">
+                                    +{{stat}}
+                                </div>
+
+                            </div>
+
+                            <div
+                                class="item-detail-description-recipe item-details-description-all item-content-figure">
+                                <strong>
+                                    <p>Recipe</p>
+                                </strong>
+                                <div class="item-detail-description-recipe-body">
+                                    <div class="container-fluid d-flex justify-content-around">
+                                        <div class="row">
+
+                                            <div class="col-4">
+                                                <span>
+                                                    <strong>Cost</strong>
+                                                </span>
+                                                <div class="item-detail-content-gold">
+                                                    <img src="https://static.bigbrain.gg/assets/ugg/icons/gold-icon.svg"
+                                                        alt="gold-icon">
+                                                    {{itemDetail.gold.base}}
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <span>
+                                                    <strong>Sell</strong>
+                                                </span>
+                                                <div class="item-detail-content-gold">
+                                                    <img src="https://static.bigbrain.gg/assets/ugg/icons/gold-icon.svg"
+                                                        alt="gold-icon">
+                                                    {{itemDetail.gold.sell}}
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <span>
+                                                    <strong>ID</strong>
+                                                </span>
+                                                <div class="item-detail-content-ID ">
+                                                    <strong>{{itemID}}</strong>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

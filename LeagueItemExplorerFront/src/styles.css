@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #070720;
+    color: white;
+}
+.link {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.container-elements {
+    margin-top: 4%;
+}
+.image :hover {
+    cursor: pointer;
+}

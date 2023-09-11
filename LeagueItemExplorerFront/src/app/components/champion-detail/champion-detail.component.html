@@ -1,0 +1,101 @@
+<div *ngIf="dataLoaded" class="container champion-content">
+
+    <div class="champion-content-container ">
+
+        <div class="champion-content-header">
+            <div class="d-flex align-items-center">
+                <div class="champion-content-header-image">
+                    <img src={{championImage}} width="300px" height="200px">
+                </div>
+
+                <div class="champion-content-title">
+                    <div class="mb-3">
+                        <h2>{{championName}}</h2>
+                    </div>
+                    <div class="mb-3">
+                        <h4>{{championTitle}}</h4>
+                    </div>
+                    <div class="mb-3">
+                        <a *ngFor="let tagImage of tagsImages"> <img src={{tagImage}} alt=""
+                                width="30px" height="30px"></a>
+                    </div>
+                    <div class="mb-3">
+                        <p>{{championName}} is a {{tagText}} champion in League of Legends</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="champion-content-abilities" style="margin-top: 5rem;">
+            <div class="champion-content-abilities-header text-center">
+                <h1>Abilities</h1>
+            </div>
+            <div class="champion-content-abilities-body">
+
+                <div class="champion-card-section">
+                    <div class="container-fluid">
+                        <div class="d-flex justify-content-center mb-4">
+                            <h2>{{championName}} Passive</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class=" mt-2">
+                                        <img src={{championImagePassive}} alt="" srcset="" width="100px" height="100px">
+                                    </div>
+                                    <div class="champion-text">
+                                        <strong>{{championPassive.name}}</strong>
+                                        <p> {{championPassiveWithoutTags}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <video controlslist="nodownload" preload="metadata" controls="">
+                                        <source type="video/mp4" src={{loadVideoPassive()}}>
+                                        <source type="video/webm" src={{loadVideoPassive()}}>
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="champion-card-section" *ngFor=" let spell of championSpells; let i = index">
+                    <div class="champion-card-header">
+                        <div class="container-fluid">
+                            <div class="d-flex justify-content-center mb-4">
+                                <h2>{{championName}} {{abilitiesOrderOnlyLetters[i]}}</h2>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class=" mt-2">
+                                            <img src={{loadImageSpell(spell)}} alt="" width="100px" height="100px">
+                                        </div>
+                                        <div class="champion-text">
+                                            <strong>{{spell.name}}</strong>
+                                            <!-- <p>Cooldowns: {{spell.cooldownBurn}}</p> -->
+                                            <p>{{spell.description}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div>
+                                        <video controlslist="nodownload" preload="metadata" controls="">
+                                            <source type="video/mp4" src={{loadVideoSpells(i)}}>
+                                            <source type="video/webm" src={{loadVideoSpells(i)}}>
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</div>

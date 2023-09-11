@@ -1,0 +1,17 @@
+.champion-card-section {
+    padding: 14px;
+    padding-left: 2%;
+    border-radius: 3px;
+    background-color: #191937;
+    margin-bottom: 2%;
+    
+}
+.champion-card-header p:before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 18px;
+    background-color: #3273fa;
+    margin-right: 10px;
+    vertical-align: middle;
+}
