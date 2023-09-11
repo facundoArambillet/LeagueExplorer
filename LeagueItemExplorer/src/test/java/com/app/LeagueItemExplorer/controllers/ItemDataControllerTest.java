@@ -1,15 +1,12 @@
 package com.app.LeagueItemExplorer.controllers;
 
 import com.app.LeagueItemExplorer.models.ItemData;
-import com.app.LeagueItemExplorer.services.ItemDataService;
-import org.junit.jupiter.api.BeforeEach;
+import com.app.LeagueItemExplorer.services.ItemDataServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +20,7 @@ public class ItemDataControllerTest {
 //    @Mock
 //    private ItemData itemData;
     @Mock
-    private ItemDataService itemDataService;
+    private ItemDataServiceImpl itemDataService;
     @InjectMocks
     private ItemDataController itemDataController;
 

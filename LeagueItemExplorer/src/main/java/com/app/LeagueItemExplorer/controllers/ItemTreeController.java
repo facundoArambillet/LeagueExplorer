@@ -1,6 +1,6 @@
 package com.app.LeagueItemExplorer.controllers;
 
-import com.app.LeagueItemExplorer.services.ItemTreeService;
+import com.app.LeagueItemExplorer.services.ItemTreeServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/itemTree")
 public class ItemTreeController {
     @Autowired
-    private ItemTreeService itemTreeService;
+    private ItemTreeServiceImpl itemTreeService;
 
     @GetMapping
     public Object getAll() {

@@ -1,6 +1,6 @@
 package com.app.LeagueItemExplorer.controllers;
 
-import com.app.LeagueItemExplorer.services.ChampionService;
+import com.app.LeagueItemExplorer.services.ChampionServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/champion")
 public class ChampionController {
     @Autowired
-    private ChampionService championService;
+    private ChampionServiceImpl championService;
 
     @GetMapping
     public Object getAll() {return this.championService.getAll();}

@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 public class ItemDataServiceTest {
     @Autowired
-    private ItemDataService itemDataService;
+    private ItemDataServiceImpl itemDataService;
 
     @Test
     public void givenItemsData_whenGetAllItems_thenMapShouldNotBeEmptyOrNull() {

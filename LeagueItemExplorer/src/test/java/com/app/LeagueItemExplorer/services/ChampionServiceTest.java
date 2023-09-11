@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ChampionServiceTest {
 
     @Autowired
-    private ChampionService championService;
+    private ChampionServiceImpl championService;
 
     @Test
     public void givenChampions_whenGetAllChampions_thenMapShouldNotBeEmptyOrNull() {

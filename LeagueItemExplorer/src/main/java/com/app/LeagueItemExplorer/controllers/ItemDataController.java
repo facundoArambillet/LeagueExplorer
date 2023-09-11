@@ -1,6 +1,6 @@
 package com.app.LeagueItemExplorer.controllers;
 
-import com.app.LeagueItemExplorer.services.ItemDataService;
+import com.app.LeagueItemExplorer.services.ItemDataServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/itemData")
 public class ItemDataController {
     @Autowired
-    private ItemDataService itemDataService;
+    private ItemDataServiceImpl itemDataService;
 
     @GetMapping
     public Object getAll() {

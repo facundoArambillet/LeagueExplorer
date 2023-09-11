@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @SpringBootTest
 public class ItemTreeServiceTest {
     @Autowired
-    private ItemTreeService itemTreeService;
+    private ItemTreeServiceImpl itemTreeService;
 
     @Test
     public void givenItemsTree_whenGetAllItems_thenMapShouldNotBeEmptyOrNull() {
