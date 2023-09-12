@@ -41,4 +41,5 @@ ng serve
 * [Maven](https://maven.apache.org/) - Manejador de dependencias
 
 # Demo
+(Carga de gift aproximada: 20 Seg)
 ![Imagen de página principal del proyecto](https://github.com/facundoArambillet/LeagueExplorer/blob/main/Animation.gif)
