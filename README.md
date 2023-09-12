@@ -41,4 +41,4 @@ ng serve
 * [Maven](https://maven.apache.org/) - Manejador de dependencias
 
 # Demo
-![Imagen de página principal del proyecto](https://github.com/facundoArambillet/)
+![Imagen de página principal del proyecto](https://github.com/facundoArambillet/LeagueExplorer/blob/main/Animation.gif)
